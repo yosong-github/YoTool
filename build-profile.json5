@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\24045\\.ohos\\config\\default_YoTool_TVb3wDcB-V-4Sm-2U2dMQtgkgYHgznI2S6AeAsqWo8M=.cer",
+          "storePassword": "0000001AC1513659B423D043909C958786FAB328016CEE8046BBE1F6E95DE3A1FC5491940D94816A4014",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001AADFE9AE0ACD4C0649F60C664A96B3F33652C74E0D368393F4E36554208B3401104F014C1830F",
+          "profile": "C:\\Users\\24045\\.ohos\\config\\default_YoTool_TVb3wDcB-V-4Sm-2U2dMQtgkgYHgznI2S6AeAsqWo8M=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\24045\\.ohos\\config\\default_YoTool_TVb3wDcB-V-4Sm-2U2dMQtgkgYHgznI2S6AeAsqWo8M=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
